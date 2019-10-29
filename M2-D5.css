@@ -1,0 +1,59 @@
+/*
+            EX1) Write a selector to target the main title of the page
+            EX2) Write a selector to target every children of the navbar
+            EX3) Write a selector to target the "continue reading..." inside the jumbotron
+            EX4) Write a selector to target the first blogpost  
+            EX5) Write a selector to target the "even" links in the navbar
+            EX6) Write a selector to target the last blog post
+            EX7) Write a selector to target all the li into the sidebar
+            EX8) Write a selector to target the second post author
+            EX9) Write a selector to target the "back to top" link
+            EX10) Write a selector to target the footer
+        */
+
+/*  EX1) Write a selector to target the main title of the page */
+
+h1 {
+  border: 2px solid white;
+}
+
+/* EX2) Write a selector to target every children of the navbar */
+
+nav > a {
+  background-color: lightgrey;
+}
+
+/* EX3) Write a selector to target the "continue reading..." inside the jumbotron */
+
+/*  EX4) Write a selector to target the first blogpost */
+
+.blog-post:nth-child(2) {
+  border: 1px solid black;
+}
+
+/* EX5) Write a selector to target the "even" links in the navbar */
+nav > a:nth-child(2) {
+  color: pink;
+}
+
+/* EX6) Write a selector to target the last blog post */
+
+.blog-post:nth-child(4) {
+  border: 1px solid black;
+}
+
+/* EX7) Write a selector to target all the li into the sidebar */
+
+div ol li {
+  border: 1px solid black;
+}
+
+/* EX8) Write a selector to target the second post author */
+
+/* EX9) Write a selector to target the "back to top" link */
+
+/* EX10) Write a selector to target the footer */
+
+footer {
+  background-color: pink;
+}
