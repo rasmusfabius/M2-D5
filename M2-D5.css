@@ -12,48 +12,61 @@
         */
 
 /*  EX1) Write a selector to target the main title of the page */
-
+/* var selected = document.QuerySelector("h1")*/
 h1 {
   border: 2px solid white;
 }
 
+/* var selected = document.querySelectorAll("nav > *"); */
+/* var selected = document.querySelectorAll("nav > a"); */
+
 /* EX2) Write a selector to target every children of the navbar */
-
 nav > a {
-  background-color: lightgrey;
+  background-color: green;
 }
 
+/* var selected = document.querySelectorAll("jumbotron a"); */
 /* EX3) Write a selector to target the "continue reading..." inside the jumbotron */
+.jumbotron a {
+  border: 1px solid green;
+}
 
+/* var selected = document.querySelectorAll("h3 + .blog-post") */
 /*  EX4) Write a selector to target the first blogpost */
-
-.blog-post:nth-child(2) {
+h3 + .blog-post {
   border: 1px solid black;
 }
 
+/* var selected = document.querySelectorAll("nav a:nth-child(2n)") */
 /* EX5) Write a selector to target the "even" links in the navbar */
-nav > a:nth-child(2) {
-  color: pink;
+nav > a:nth-child(2n) {
+  border: 5px solid pink;
 }
-
+/* var selected = document.querySelectorAll(".blog-post:last-of-type")*/
 /* EX6) Write a selector to target the last blog post */
-
-.blog-post:nth-child(4) {
+.blog-post:last-of-type {
   border: 1px solid black;
 }
 
+/* var selected = document.querySelectorAll(".blog-sidebar li") */
 /* EX7) Write a selector to target all the li into the sidebar */
-
-div ol li {
+.blog-sidebar li {
   border: 1px solid black;
 }
 
+/*var selected = document.querySelectorAll(".blog-post:nth-of-type(2) .blog-post-meta a") */
 /* EX8) Write a selector to target the second post author */
+.blog-post:nth-of-type(2) .blog-post-meta a {
+  border: 2px solid red;
+}
 
+/*var selected = document.querySelectorAll(".blog-footer p:last-child a") */
 /* EX9) Write a selector to target the "back to top" link */
-
+.blog-footer p:last-child a {
+  background-color: yellow;
+}
+/* var selected = document.querySelectorAll("footer)  */
 /* EX10) Write a selector to target the footer */
-
 footer {
   background-color: pink;
 }
